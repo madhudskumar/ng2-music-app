@@ -1,0 +1,22 @@
+{
+  "name": "ng2-music",
+  "description": "example",
+  "main": "",
+  "authors": [
+    "madhudskumar <madhudskumar@live.in>"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}
