@@ -10,14 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var header_component_1 = require('./common/header.component');
+var footer_component_1 = require('./common/footer.component');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>hello</h1>\n        <router-outlet></router-outlet>\n    ",
-            directives: [router_1.ROUTER_DIRECTIVES]
+            template: "\n        <header-component></header-component>\n        <div class=\"container\">\n            <router-outlet></router-outlet>\n        </div>\n        <footer-component></footer-component>\n    ",
+            directives: [router_1.ROUTER_DIRECTIVES, header_component_1.headerComponent, footer_component_1.footerComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

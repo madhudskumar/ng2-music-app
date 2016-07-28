@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector:'test-component',
+    selector:'header-component',
     template:`
-        <h1>Test html</h1>
+        <h1>header component what ?</h1>
     `
 })
 
-export class testComponent { }
+export class headerComponent { }
