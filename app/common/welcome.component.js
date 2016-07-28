@@ -9,19 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var AppComponent = (function () {
-    function AppComponent() {
+var welcomeComponent = (function () {
+    function welcomeComponent() {
     }
-    AppComponent = __decorate([
+    welcomeComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "\n        <h1>hello</h1>\n        <router-outlet></router-outlet>\n    ",
-            directives: [router_1.ROUTER_DIRECTIVES]
+            selector: 'welcome-component',
+            template: "\n        <h1 class=\"bg-success\">welcome to the music app</h1>\n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], welcomeComponent);
+    return welcomeComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.welcomeComponent = welcomeComponent;
+//# sourceMappingURL=welcome.component.js.map
