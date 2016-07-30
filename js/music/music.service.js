@@ -52,7 +52,7 @@ var musicService = (function () {
                 .map(function (res) {
                 res = res.json();
                 var data = res.album;
-                var songs = {};
+                var songs = [];
                 data.tracks.track.forEach(function (data) {
                     songs.push(new song_class_1.Song(data.name));
                 });

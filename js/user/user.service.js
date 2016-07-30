@@ -9,7 +9,7 @@ var userServices = (function () {
     userServices.prototype.getUser = function () {
         var _this = this;
         return new observable_1.Observable(function (observable) {
-            _this.firebaseRef.onAuth(function (authData) {
+            _this.firebaseRef.onAuth(function () {
                 var authData = _this.firebaseRef.getAuth();
                 var user;
                 if (authData) {

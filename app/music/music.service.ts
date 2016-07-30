@@ -46,7 +46,7 @@ export class  musicService{
                     res = res.json();
                     let data = res.album;
 
-                    var songs:Array<iSong> = {};
+                    var songs:Array<iSong> = [];
                     data.tracks.track.forEach(data => {
                         songs.push(new Song(data.name));
                     });

@@ -14,7 +14,7 @@ export class userServices{
 
     getUser() : Observable{
         return new Observable(observable => {
-            this.firebaseRef.onAuth(authData => {
+            this.firebaseRef.onAuth(() => {
                 let authData = this.firebaseRef.getAuth();
                 let user;
                 if(authData){
