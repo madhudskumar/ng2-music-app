@@ -18,7 +18,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <header-component></header-component>\n        <div class=\"container\">\n            <router-outlet></router-outlet>\n        </div>\n        <footer-component></footer-component>\n    ",
+            template: "\n        <div class=\"container\">\n            <header-component ></header-component>\n        </div>\n        <div class=\"container\">\n            <router-outlet></router-outlet>\n        </div>\n        <div class=\"container\">\n            <footer-component class=\"container\"></footer-component>    \n        </div>\n    ",
             directives: [router_1.ROUTER_DIRECTIVES, header_component_1.headerComponent, footer_component_1.footerComponent]
         }), 
         __metadata('design:paramtypes', [])

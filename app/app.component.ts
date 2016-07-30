@@ -7,11 +7,15 @@ import { footerComponent } from './common/footer.component';
 @Component({
     selector: 'my-app',
     template: `
-        <header-component></header-component>
+        <div class="container">
+            <header-component ></header-component>
+        </div>
         <div class="container">
             <router-outlet></router-outlet>
         </div>
-        <footer-component></footer-component>
+        <div class="container">
+            <footer-component class="container"></footer-component>    
+        </div>
     `,
     directives:[ ROUTER_DIRECTIVES, headerComponent, footerComponent]
 })
