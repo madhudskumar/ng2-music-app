@@ -1,6 +1,6 @@
 import { iPage } from './pager.interface';
 
-export class pager implements iPage{
+export class Pager implements iPage{
     public pages: number = 0;
 
     constructor(

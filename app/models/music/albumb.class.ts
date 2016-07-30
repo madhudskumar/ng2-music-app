@@ -1,7 +1,7 @@
 import {iAlbumb, albumbImageSize} from './music.interface';
 import { iSong } from './music.interface';
 
-export class albumb implements iAlbumb{
+export class Albumb implements iAlbumb{
 
     constructor(
         public id: number,
