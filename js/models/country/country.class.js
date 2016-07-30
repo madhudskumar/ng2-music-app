@@ -1,10 +1,10 @@
 "use strict";
-var country = (function () {
-    function country(alpha2code, name) {
+var Country = (function () {
+    function Country(alpha2code, name) {
         this.alpha2code = alpha2code;
         this.name = name;
     }
-    return country;
+    return Country;
 }());
-exports.country = country;
+exports.Country = Country;
 //# sourceMappingURL=country.class.js.map

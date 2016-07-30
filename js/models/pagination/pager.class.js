@@ -1,6 +1,6 @@
 "use strict";
-var pager = (function () {
-    function pager(itemsPerPage, startIndex, totalResults, maxPages) {
+var Pager = (function () {
+    function Pager(itemsPerPage, startIndex, totalResults, maxPages) {
         if (maxPages === void 0) { maxPages = 10; }
         this.itemsPerPage = itemsPerPage;
         this.startIndex = startIndex;
@@ -10,7 +10,7 @@ var pager = (function () {
         var realMaxPages = Math.ceil(this.totalResults / this.itemsPerPage);
         this.pages = realMaxPages <= this.maxPages ? realMaxPages : this.maxPages;
     }
-    return pager;
+    return Pager;
 }());
-exports.pager = pager;
+exports.Pager = Pager;
 //# sourceMappingURL=pager.class.js.map
