@@ -11,4 +11,4 @@ export class ElipisPipe implements PipeTransform{
         }
         return value;
     }
-}
+};
